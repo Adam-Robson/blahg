@@ -9,7 +9,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div>
       {/* Add your layout structure here */}
       <header>
-        <h1>a blog | posts</h1>
+        <h1>a blog | wooden</h1>
         {/* Add any header content here */}
       </header>
       
@@ -17,7 +17,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       
       <footer>
         {/* Add any footer content here */}
-        <p>&copy; 2023 a blog by adam</p>
+        <p>&copy; 2023 My App</p>
       </footer>
     </div>
   );

@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import Layout from './layout';
+import Image from 'next/image';
 
-export default function FirstPost() {
+export default function Posts() {
   return (
     <>
       <Link href="/">← home</Link>
-      <h1>imaginative intervention</h1>
-
+      <Link href="/posts/1">
+        <h1>imaginative intervention</h1>
+        <span>May 11, 2023</span></Link>
     </>
   );
 }

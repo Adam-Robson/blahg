@@ -4,60 +4,76 @@
 
 
 :root {
-  --black-olive: hsla(26, 6%, 25%, 1);
-  --onyx: hsla(236, 13%, 26%, 1);
+  --eerie-black: hsla(210, 11%, 15%, 1);
+  --onyx: hsla(210, 10%, 23%, 1);
+  --outer-space: hsla(210, 9%, 31%, 1);
+  --slate-gray: hsla(208, 7%, 46%, 1);
+  --french-gray: hsla(210, 11%, 71%, 1);
+  --french-gray-2: hsla(210, 14%, 83%, 1);
+  --seasalt: hsla(210, 17%, 98%, 1);
+  --antiflash-white: hsla(210, 16%, 93%, 1);
+  --olive: hsla(23, 6%, 26%, 1);
   --eggplant: hsla(328, 14%, 36%, 1);
-  --hookers-green: hsla(178, 16%, 42%, 1);
-  --blue-munsell: hsla(191, 34%, 48%, 1);
-  --olivine: hsla(71, 37%, 64%, 1);
-  --timberwolf: hsla(26, 15%, 81%, 1);
   --lavender-web: hsla(259, 19%, 83%, 1);
-  --platinum: hsla(240, 1%, 86%, 1);
-  --gradient-radial-1: radial-gradient(#d6cec8ff, #694f5dff, #5a7d7cff, #dcdcddff, #393a4aff);
-  
+  --timberwolf: hsla(26, 15%, 81%, 1);
+  --platinum-gray: hsla(240, 1%, 86%, 1);
+  --gunmetal: hsla(204, 28%, 19%, 1);
+  --blue-munsell: hsla(191, 34%, 48%, 1);
+  --tint: hsla(202, 42%, 86%, 1);
+  --green: hsla(164, 11%, 41%, 1);
+  --myrtle-green: hsla(186, 22%, 37%, 1);
+  --cambridge-blue: hsla(149, 19%, 66%, 1);
+  --olivine: hsla(71, 37%, 64%, 1);
+  --tan: hsla(35, 53%, 69%, 1);
+  --cornsilk: hsla(50, 73%, 90%, 1);
+  --burnt-sienna: hsla(15, 55%, 64%, 1);
   --jasper: hsla(8, 49%, 51%, 1);
 
-  --gradient-top: linear-gradient(0deg, #423e3bff, #d1ccdcff, #b8c480ff, #5296a5ff, #c05746ff);
-  --gradient-radial-2: radial-gradient(#423e3bff, #d1ccdcff, #b8c480ff, #5296a5ff, #c05746ff);
-
   line-height: 2;
+  color: var(--outer-space);
+
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb:hsla(236, 13%, 26%, 1);
-    --background-start-rgb: hsla(240, 1%, 86%, 1);
-    --background-end-rgb: hsla(240, 1%, 86%, 1);
+   color: var(--seasalt);
+   background-color: var(--onyx);
   }
 }
 
 body {
-  color: rgb(var(--platinum));
+  height: 100vh;
+  color: var(--outerspace);
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--onyx))
+      var(--antiflash-white)
     )
-    rgb(var(--eggplant));
 }
 
 a {
   text-decoration: none;
-  color:var(--eggplant);
+  color:var(--burnt-sienna);
   cursor: pointer;
   font-weight: 500;
 }
 a:hover {
   text-decoration: underline;
-  color: var(--blue-munsell)
+  color: var(--tan)
 
 }
 
-h1 {
-  color: var(--eggplant);
-
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rem;
 }
 
-.z {
-  color: var(--eggplant);
+.caption {
+  color: var(--burnt-sienna);
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+
 }

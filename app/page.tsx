@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home() {
+const Home: React.FunctionComponent = () => {
   return (
     <main className="">
       <section className="flex flex-col justify-center items-center">
@@ -15,7 +15,7 @@ export default function Home() {
           />
         </header>
         <h1 className="text-center mx-2 text-2xl md:text-4xl font-semibold my-10 subpixel-antialiased">
-          {'hi! i\'m a software engineer and writer in the pacific northwest, US.' }
+          {'hi! i\'m a software engineer, musician and writer living in the pacific northwest, US.' }
         </h1>
         <Image
           src="/adam.png"
@@ -24,10 +24,35 @@ export default function Home() {
           height="225"
           className="rounded-full"
         />
-        <p className="z tracking-wide font-light text-xl md:text-2xl text-center subpixel-antialiased mx-4 my-10">
-          <Link className="link" href="/posts"><em>this</em></Link> is where you can find items that i have written
+        <article className="wrap">
+          <p className="caption">
+            <em className="text-lg font-semibold">
+              find my work:
+            </em>
+          <Link className="link" href="https://github.com/Adam-Robson">applications</Link>
+          <Link className="link" href="adamrayrobsonportfolio.netlify.app">portfolio</Link>
+          <Link className="link" href="/posts">writings</Link>
+          <Link className="link" href="https://spoti.fi/3QNqMuE">spotify</Link>
+          <Link className="link" href="/wooden">wooden</Link>
+          <Link className="link" href="/visible">visible</Link>
+          <Link className="link" href="#">travels</Link>
         </p>
-      </section>
+       
+        <p className="caption"><em className="text-lg font-semibold">connect with me:</em>
+          <Link className="link" href="https://www.linkedin.com/in/adamrayrobson/">LinkedIn</Link>
+          <Link className="" href="https://www.facebook.com/adamrayrobson" >Facebook</Link>
+          <Link className="" href="https://www.instagram.com/hiimadaam/" >Instagram</Link>
+
+          </p>
+        </article>
+        <footer className="w-full text-center pb-10 absolute bottom-0">
+         <p className="">buy me a 
+          <Link className="link" href="https://www.buymeacoffee.com/AdamRobson"> coffee</Link>
+          </p>
+        </footer>
+        </section>
     </main>
   )
 }
+
+export default Home;
