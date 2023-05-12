@@ -2,26 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --black-olive: hsla(26, 6%, 25%, 1);
+  --onyx: hsla(236, 13%, 26%, 1);
+  --eggplant: hsla(328, 14%, 36%, 1);
+  --hookers-green: hsla(178, 16%, 42%, 1);
+  --blue-munsell: hsla(191, 34%, 48%, 1);
+  --olivine: hsla(71, 37%, 64%, 1);
+  --timberwolf: hsla(26, 15%, 81%, 1);
+  --lavender-web: hsla(259, 19%, 83%, 1);
+  --platinum: hsla(240, 1%, 86%, 1);
+  --gradient-radial-1: radial-gradient(#d6cec8ff, #694f5dff, #5a7d7cff, #dcdcddff, #393a4aff);
+  
+  --jasper: hsla(8, 49%, 51%, 1);
+
+  --gradient-top: linear-gradient(0deg, #423e3bff, #d1ccdcff, #b8c480ff, #5296a5ff, #c05746ff);
+  --gradient-radial-2: radial-gradient(#423e3bff, #d1ccdcff, #b8c480ff, #5296a5ff, #c05746ff);
+
+  line-height: 2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb:hsla(236, 13%, 26%, 1);
+    --background-start-rgb: hsla(240, 1%, 86%, 1);
+    --background-end-rgb: hsla(240, 1%, 86%, 1);
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--platinum));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--onyx))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--eggplant));
+}
+
+a {
+  text-decoration: none;
+  color:var(--eggplant);
+  cursor: pointer;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--blue-munsell)
+
+}
+
+h1 {
+  color: var(--eggplant);
+
+}
+
+.z {
+  color: var(--eggplant);
 }

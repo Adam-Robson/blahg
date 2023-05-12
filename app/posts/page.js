@@ -4,8 +4,8 @@ import Layout from './layout';
 export default function FirstPost() {
   return (
     <>
-      <Link href="/">← Back to home</Link>
-      <h1>First Post</h1>
+      <Link href="/">← home</Link>
+      <h1>imaginative intervention</h1>
 
     </>
   );
